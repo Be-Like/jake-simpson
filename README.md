@@ -2,6 +2,7 @@
 
 ## What to Include
 * About
+* What I'm Learning
 * Projects
   * [Tisn](https://github.com/Tisn/tisn.app) (open source)
   * [My-Stock-Watcher](https://github.com/Be-Like/my-stock-watcher)
