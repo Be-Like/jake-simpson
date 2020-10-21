@@ -10,14 +10,14 @@
 
 <script>
 export default {
-  
+
 }
 </script>
 
 <style lang="scss" scoped>
 #Contact {
   position: relative;
-  height: 100px;
+  height: 20vh;
   width: 100%;
   background-color: white;
 }
@@ -29,8 +29,10 @@ export default {
 
 .links {
   background-color: red;
+  display: flex;
+  justify-content: space-between;
   width: 30%;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 
 .github {
