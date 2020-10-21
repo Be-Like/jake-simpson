@@ -9,21 +9,25 @@
     </div>
     <div class='section section-2' ref='second'>
       <div>
-        <h2> Here's more info </h2>
-        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit...</p>
+        <p>A software engineer and family man</p>
       </div>
     </div>
-  <div class="section test">
-    <h3>Just another test</h3>
-  </div>
+    <!-- <div class="section test"> -->
+    <Learning />
+    <!-- </div> -->
   </div>
 </template>
 
 <script>
+import Learning from './components/Learning'
 import { ref, onMounted, onUnmounted } from 'vue'
 
 export default {
   name: 'App',
+
+  components: {
+    Learning
+  },
 
   setup () {
     const foreground = ref(null)
@@ -79,10 +83,10 @@ export default {
   color: #2c3e50;
 }
 
-.test {
-  width: 100%;
-  background-color: aqua;
-}
+// .test {
+//   width: 100%;
+//   background-color: aqua;
+// }
 img.background, img.foreground {
     /* Fill background */
     min-height: 100%;
@@ -111,16 +115,23 @@ img.background {
 .section > div {
   position: fixed;
   color: white;
+}
+
+.section-1 > div {
   right: 0;
   margin-top: 10%;
   margin-right: 10%;
 
   @media(max-width: 925px) {
-    /* centers this div */
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, 55%);
+    margin-top: 5%;
+    margin-right: 5%;
   }
+}
+
+.section-2 > div {
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .section-1 {
@@ -128,7 +139,6 @@ img.background {
   font-size: 4em;
   text-align: right;
   @media(max-width: 925px) {
-    text-align: center;
     font-size: 3em;
   }
   /* background-color: rgba(255, 255, 255, 0.7); */
@@ -136,22 +146,7 @@ img.background {
 
 .section-2 {
   opacity: 0; /* defaults to 0 because it's not visible */
-}
-
-.section-2 div {
-  background-color: rgba(255, 255, 255, 0.7);
-  color: black;
+  font-size: 3em;
   text-align: center;
-  padding: 50px;
-  max-width: 300px;
-}
-
-.section-2 h2 {
-  font-size: 2em;
-  margin-bottom: 40px;
-}
-
-.section-2 p {
-  line-height: 150%;
 }
 </style>
