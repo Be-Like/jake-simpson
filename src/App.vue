@@ -4,7 +4,7 @@
     <!-- <img class='foreground' ref='foreground' src='./assets/tree-foreground.png'/> -->
     <div class='section section-1' ref='first'>
       <div>
-        <h1> Parallax Made Easy. </h1>
+        <p>Hi, I'm <br/> Jake Simpson</p>
       </div>
     </div>
     <div class='section section-2' ref='second'>
@@ -26,7 +26,6 @@ export default {
   name: 'App',
 
   setup () {
-    
     const foreground = ref(null)
     const background = ref(null)
     const first = ref(null)
@@ -46,7 +45,7 @@ export default {
 
       // zoom the background at a slower rate
       background.value.style.transform = 'scale(' + (100 + backgroundSize * .4) / 100 + ')'
-      // foreground.value.style.transform = 'scale(' + (100 + backgroundSize) / 100 + ')' 
+      // foreground.value.style.transform = 'scale(' + (100 + backgroundSize) / 100 + ')'
     }
 
     onMounted(() => {
@@ -67,7 +66,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 * {
   margin: 0;
   padding: 0;
@@ -88,7 +87,7 @@ img.background, img.foreground {
     /* Fill background */
     min-height: 100%;
     min-width: 1024px;
-    
+
     /* Scale proportionately */
     width: 100%;
     height: auto;
@@ -96,8 +95,13 @@ img.background, img.foreground {
 img.background {
     /* Positioning */
     position: fixed;
+    margin-top: -10%;
     top: 0;
     left: 0;
+
+    @media(max-width: 1100px) {
+      margin-top: -5%;
+    }
 }
 .section {
     min-height: 100vh;
@@ -107,15 +111,26 @@ img.background {
 .section > div {
   position: fixed;
   color: white;
-  /* centers this div */ 
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  right: 0;
+  margin-top: 10%;
+  margin-right: 10%;
+
+  @media(max-width: 925px) {
+    /* centers this div */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 55%);
+  }
 }
 
 .section-1 {
   margin-bottom: 500px; /* determines the gap between our two sections */
   font-size: 4em;
+  text-align: right;
+  @media(max-width: 925px) {
+    text-align: center;
+    font-size: 3em;
+  }
   /* background-color: rgba(255, 255, 255, 0.7); */
 }
 
