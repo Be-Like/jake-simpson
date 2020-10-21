@@ -1,6 +1,10 @@
 <template>
   <div id="Contact">
-    <h2>Contact</h2>
+    <p class="header">See What I'm Up To</p>
+    <div class="links">
+      <img class="github" src="../assets/GitHub_Logo.png">
+      <img class="linkedin" src="../assets/linked-in.svg">
+    </div>
   </div>
 </template>
 
@@ -13,13 +17,27 @@ export default {
 <style lang="scss" scoped>
 #Contact {
   position: relative;
-  min-height: 500px;
+  height: 100px;
   width: 100%;
   background-color: white;
 }
 
-h2 {
+.header {
   margin: 0;
   padding: 0;
+}
+
+.links {
+  background-color: red;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.github {
+  height: 25px;
+}
+
+.linkedin {
+  height: 25px;
 }
 </style>

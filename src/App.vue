@@ -16,6 +16,7 @@
     <Projects />
     <Career />
     <Education />
+    <Contact />
   </div>
 </template>
 
@@ -24,6 +25,7 @@ import Learning from './components/Learning'
 import Projects from './components/Projects'
 import Career from './components/Career'
 import Education from './components/Education'
+import Contact from './components/Contact'
 import { ref, onMounted, onUnmounted } from 'vue'
 
 export default {
@@ -33,7 +35,8 @@ export default {
     Learning,
     Projects,
     Career,
-    Education
+    Education,
+    Contact
   },
 
   setup () {
@@ -82,9 +85,6 @@ body {
   margin: 0;
   padding: 0;
 }
-</style>
-
-<style lang="scss" scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -92,7 +92,9 @@ body {
   text-align: center;
   color: #2c3e50;
 }
+</style>
 
+<style lang="scss" scoped>
 img.background, img.foreground {
     /* Fill background */
     min-height: 100%;
