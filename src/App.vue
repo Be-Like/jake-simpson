@@ -12,21 +12,28 @@
         <p>A software engineer and family man</p>
       </div>
     </div>
-    <!-- <div class="section test"> -->
     <Learning />
-    <!-- </div> -->
+    <Projects />
+    <Career />
+    <Education />
   </div>
 </template>
 
 <script>
 import Learning from './components/Learning'
+import Projects from './components/Projects'
+import Career from './components/Career'
+import Education from './components/Education'
 import { ref, onMounted, onUnmounted } from 'vue'
 
 export default {
   name: 'App',
 
   components: {
-    Learning
+    Learning,
+    Projects,
+    Career,
+    Education
   },
 
   setup () {
@@ -70,11 +77,14 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-* {
+<style lang="scss">
+body {
   margin: 0;
   padding: 0;
 }
+</style>
+
+<style lang="scss" scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -83,10 +93,6 @@ export default {
   color: #2c3e50;
 }
 
-// .test {
-//   width: 100%;
-//   background-color: aqua;
-// }
 img.background, img.foreground {
     /* Fill background */
     min-height: 100%;
