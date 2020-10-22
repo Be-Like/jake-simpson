@@ -81,6 +81,14 @@ export default {
 </script>
 
 <style lang="scss">
+@font-face {
+  font-family: 'Steiner';
+  src: local('Steiner'), url('./assets/fonts/Steinerlight.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Electro';
+  src: local('Electro'), url('./assets/fonts/Electrolize-Regular.ttf') format('truetype');
+}
 body {
   margin: 0;
   padding: 0;
