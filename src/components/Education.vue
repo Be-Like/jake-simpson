@@ -19,7 +19,7 @@ export default {
     usc,
     mevn,
     mern
-  }  
+  }
 }
 </script>
 
@@ -34,9 +34,10 @@ export default {
 }
 
 .header {
-  color: white;
+  color: black;
   font-family: 'Steiner';
   font-size: 25px;
+  font-weight: bold;
   left: 0;
   margin: 15px;
   padding: 0;
@@ -46,6 +47,7 @@ export default {
 }
 
 .education-container {
+  align-items: center;
   padding-top: 60px;
   display: flex;
   flex-wrap: wrap;

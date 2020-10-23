@@ -10,17 +10,24 @@
       to learn about and to be a part of the new and emerging tech. This is
       what led me to seek and acquire a degree in Computer Science.
     </p>
-    <ul>
-      <li>Bachelor of Science in Computer Science</li>
-      <li>Graduated: May 2019</li>
-      <li>Capstone: TimeKeepers (Android Native Application)</li>
-    </ul>
+    <div class="list-item">
+      <img class="icon" src="../../assets/diploma.svg">
+      <p>Bachelor of Science in Computer Science</p>
+    </div>
+    <div class="list-item">
+      <img class="icon" src="../../assets/mortarboard.svg">
+      <p>Graduated: May 2019</p>
+    </div>
+    <div class="list-item">
+      <img class="icon" src="../../assets/mobile-phone.svg">
+      <p>Capstone: TimeKeepers (Android Native Application)</p>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  
+
 }
 </script>
 

@@ -30,6 +30,7 @@ export default {
   color: white;
   font-family: 'Steiner';
   font-size: 25px;
+  font-weight: bold;
   left: 0;
   margin: 15px;
   padding: 0;
@@ -52,10 +53,10 @@ export default {
 }
 
 .github {
-  height: 25px;
+  height: 45px;
 }
 
 .linkedin {
-  height: 25px;
+  height: 40px;
 }
 </style>
