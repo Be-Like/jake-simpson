@@ -47,7 +47,6 @@ export default {
 }
 
 .education-container {
-  align-items: center;
   padding-top: 60px;
   display: flex;
   flex-wrap: wrap;
