@@ -3,10 +3,10 @@
     <p class="header">Check Out What I'm Up To</p>
     <div class="links">
       <a href="https://github.com/Be-Like" target="_blank">
-        <img class="github" src="../assets/GitHub_Logo_White.png">
+        <img class="github" src="../assets/github-long.png">
       </a>
       <a href="https://linkedin.com/in/be-like" target="_blank" rel="noopener noreferrer">
-        <img class="linkedin" src="../assets/LI-Logo.png">
+        <img class="linkedin" src="../assets/linkedin-long.svg">
       </a>
     </div>
   </div>
@@ -57,6 +57,6 @@ export default {
 }
 
 .linkedin {
-  height: 40px;
+  height: 45px;
 }
 </style>
