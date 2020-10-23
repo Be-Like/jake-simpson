@@ -1,21 +1,28 @@
 <template>
   <div class="education-card">
-    <p class="header">MERN Stack Front to Back</p>
+    <div class="image-header">
+      <img src="../../assets/react-logo.png" class="image">
+    </div>
     <p class="body">
-      While studying at USC, I discovered that I have a passion for learning.
-      My desire for discovery and knowledge of how things work led me to seek
-      scholarship in an industry that will never quench that passion.
-      Technology! In an industry that is ever in motion, I am always thrilled
-      to learn about and to be a part of the new and emerging tech. This is
-      what led me to seek and acquire a degree in Computer Science.
+      While not as fun to work with, and much more bloated than Vue,
+      React has a very large presence in the web application development
+      world. As such, I took it upon myself to get educated in working 
+      with React.<br/>Brad Traversy does a very good job introducing and
+      expounding on React, as well as educating students in Redux. 
     </p>
     <div class="list-item">
       <img class="icon" src="../../assets/certificate.svg">
-      <p>Full Stack React, Redux & Node.js Certificate</p>
+      <p>
+        Certificate: MERN Stack Front to Back: Full Stack React, Redux & Node.js
+      </p>
     </div>
     <div class="list-item">
       <img class="icon" src="../../assets/check-box.svg">
       <p>Completed: October 2019</p>
+    </div>
+    <div class="list-item">
+      <img class="icon" src="../../assets/teacher.svg">
+      <p>Instructor: Brad Traversy</p>
     </div>
   </div>
 </template>
@@ -28,4 +35,9 @@ export default {
 
 <style lang="scss" scoped>
 @import './stylesheet.scss';
+
+.education-card {
+  box-shadow: 5px 4px 5px rgba(97, 218, 251, 0.6);
+  color: rgb(97, 218, 251);
+}
 </style>

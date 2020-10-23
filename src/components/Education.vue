@@ -50,6 +50,6 @@ export default {
   padding-top: 60px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 </style>

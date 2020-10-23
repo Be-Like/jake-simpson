@@ -1,7 +1,9 @@
 <template>
   <div class="education-card">
-    <div class="image"/>
-    <p class="header">University of South Carolina</p>
+    <div class="image-header">
+      <img class="image" src="../../assets/u-of-sc-long-red.png" alt=""/>
+    </div>
+    <!-- <p class="header">University of South Carolina</p> -->
     <p class="body">
       While studying at USC, I discovered that I have a passion for learning.
       My desire for discovery and knowledge of how things work led me to seek
@@ -33,7 +35,9 @@ export default {
 
 <style lang="scss" scoped>
 @import './stylesheet.scss';
-.image {
-  background-image: url('../../assets/u-of-sc-long-red.png');
+
+.education-card {
+  box-shadow: 5px 4px 5px rgba(115, 0, 10, 0.6);
+  color: rgb(115, 0, 10);
 }
 </style>

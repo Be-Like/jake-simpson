@@ -1,6 +1,8 @@
 <template>
   <div class="education-card">
-    <p class="header">Vue - The Complete Guide</p>
+    <div class="image-header">
+      <img src="../../assets/vue-logo.png" class="image">
+    </div>
     <p class="body">
       Vue was the first JavaScript framework that I worked with. It's simplicity
       in design and use along with the clean structure of the code is amazing to
@@ -11,14 +13,14 @@
     </p>
     <div class="list-item">
       <img class="icon" src="../../assets/certificate.svg">
-      <p>Vue, Vue-Router, Vuex, Composition API Certificate</p>
+      <p>Certificate: Vue - The Complete Guide (w/ Router, Vuex, Composition API)</p>
     </div>
     <div class="list-item">
       <img class="icon" src="../../assets/check-box.svg">
       <p>Completed: February 2019</p>
     </div>
     <div class="list-item">
-      <img class="icon" src="../../assets/check-box.svg">
+      <img class="icon" src="../../assets/teacher.svg">
       <p>Instructor: Maximilian Schwarzmüller</p>
     </div>
   </div>
@@ -32,4 +34,9 @@ export default {
 
 <style lang="scss" scoped>
 @import './stylesheet.scss';
+
+.education-card {
+  box-shadow: 5px 4px 5px rgba(0, 189, 130, 0.6);
+  color: rgb(0, 189, 130);
+}
 </style>
