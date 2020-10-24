@@ -1,21 +1,21 @@
 <template>
   <div class="career">
-    <img src="../../assets/quintevents.png">
+    <div class="image-container">
+      <img src="../../assets/quintevents.png">
+    </div>
     <div class="description">
-      <h3>Software Developer</h3>
-      <p>December 2019 to Present</p>
-      <p>Description</p>
+      <p class="title">Junior Software Developer</p>
+      <p class="dates">December 2019 to Present</p>
+      <p class="description">Description</p>
       <p>Tools used</p>
     </div>
   </div>
 </template>
 
-<script>
-export default {
-
-}
-</script>
-
 <style lang="scss" scoped>
 @import './stylesheet';
+
+img {
+  height: 100%;
+}
 </style>

@@ -1,12 +1,13 @@
 .career {
-  display: flex;
   align-items: center;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 img {
-  width: 50%;
+  // width: 50%;
 }
 
 .description {
-  width: 30%;
+  // width: 30%;
 }

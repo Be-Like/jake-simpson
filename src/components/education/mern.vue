@@ -6,9 +6,9 @@
     <p class="body">
       While not as fun to work with, and much more bloated than Vue,
       React has a very large presence in the web application development
-      world. As such, I took it upon myself to get educated in working 
+      world. As such, I took it upon myself to get educated in working
       with React.<br/>Brad Traversy does a very good job introducing and
-      expounding on React, as well as educating students in Redux. 
+      expounding on React, as well as educating students in Redux.
     </p>
     <div class="list-item">
       <img class="icon" src="../../assets/certificate.svg">
@@ -26,12 +26,6 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-
-}
-</script>
 
 <style lang="scss" scoped>
 @import './stylesheet.scss';
