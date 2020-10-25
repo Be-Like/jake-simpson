@@ -6,8 +6,10 @@
     <div class="description">
       <p class="title">Junior Software Developer</p>
       <p class="dates">December 2019 to Present</p>
+      <p><b>Daily tools:</b>
+        Vue, Ruby on Rails, Docker, Kubernetes, AWS, PostgreSQL
+      </p>
       <p class="description">Description</p>
-      <p>Tools used</p>
     </div>
   </div>
 </template>
@@ -17,5 +19,9 @@
 
 img {
   height: 100%;
+}
+
+.description {
+  text-align: right;
 }
 </style>

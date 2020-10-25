@@ -2,20 +2,28 @@
   <div class="career">
     <img src="../../assets/retail-architects.png">
     <div class="description">
-      <h3>Software Developer</h3>
-      <p>December 2019 to Present</p>
-      <p>Description</p>
-      <p>Tools used</p>
+      <p class="title">Software Developer (Intern)</p>
+      <p class="dates">July 2018 to February 2019</p>
+      <p><b>Daily tools:</b>
+        Python, Vue, Pentaho, PostgreSQL
+      </p>
+      <p class="description">Description</p>
     </div>
-  </div>  
+  </div>
 </template>
 
 <script>
 export default {
-  
+
 }
 </script>
 
 <style lang="scss" scoped>
 @import './stylesheet';
+
+img {}
+
+.description {
+  text-align: right;
+}
 </style>
