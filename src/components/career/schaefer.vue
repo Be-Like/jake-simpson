@@ -6,7 +6,12 @@
       <p><b>Daily tools:</b>
         Java, Oracle SQL, Jenkins
       </p>
-      <p class="description">Description</p>
+      <p class="description">
+        SSI Schaefer is a very large warehousing logistics and management company.
+        While there, I maintained and developed material flow systems for our 
+        customers and handled the logistics for where and how materials are stored
+        based on inventory and various requirements of our customers.
+      </p>
     </div>
     <img src="../../assets/ssi-schaefer.svg">
   </div>

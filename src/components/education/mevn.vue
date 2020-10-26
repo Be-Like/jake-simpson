@@ -1,5 +1,17 @@
 <template>
-  <div class="education-card">
+  <div class="education-card" :style="colorBlind ? 'color: black' : null">
+    <div class="color">
+      <span @click="colorBlind = !colorBlind">
+        <img 
+          v-if="colorBlind"
+          src="../../assets/view.svg"
+        />
+        <img 
+          v-else
+          src="../../assets/invisible.svg"
+        >
+      </span>
+    </div>
     <div class="image-header">
       <img src="../../assets/vue-logo.png" class="image">
     </div>
@@ -25,6 +37,16 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      colorBlind: false
+    }
+  },
+}
+</script>
 
 <style lang="scss" scoped>
 @import './stylesheet.scss';

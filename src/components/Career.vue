@@ -47,6 +47,6 @@ export default {
 }
 
 .career-container {
-  padding-top: 60px;
+  padding: 60px 0;
 }
 </style>
