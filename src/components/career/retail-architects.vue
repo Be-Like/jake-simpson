@@ -1,7 +1,7 @@
 <template>
   <div class="career">
     <img src="../../assets/retail-architects.png">
-    <div class="description">
+    <div class="details">
       <p class="title">Software Developer (Intern)</p>
       <p class="dates">July 2018 to February 2019</p>
       <p><b>Daily tools:</b>
@@ -21,9 +21,11 @@ export default {
 <style lang="scss" scoped>
 @import './stylesheet';
 
-img {}
+img {
+  // width: 450px;
+}
 
-.description {
+.details {
   text-align: right;
 }
 </style>

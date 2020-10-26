@@ -3,7 +3,7 @@
     <div class="image-container">
       <img src="../../assets/quintevents.png">
     </div>
-    <div class="description">
+    <div class="details">
       <p class="title">Junior Software Developer</p>
       <p class="dates">December 2019 to Present</p>
       <p><b>Daily tools:</b>
@@ -18,10 +18,10 @@
 @import './stylesheet';
 
 img {
-  height: 100%;
+  width: 450px;
 }
 
-.description {
+.details {
   text-align: right;
 }
 </style>
