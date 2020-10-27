@@ -25,7 +25,7 @@ export default {
 
 <style lang="scss" scoped>
 #Career {
-  background-image: url('../assets/career.jpg');
+  background-image: url('../assets/career-purple.jpg');
   background-position: center;
   background-size: cover;
   position: relative;

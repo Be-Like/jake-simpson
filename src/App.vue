@@ -135,8 +135,8 @@ img.background {
 
 .section-1 > div {
   right: 0;
-  margin-top: 10%;
-  margin-right: 10%;
+  margin-top: 4%;
+  margin-right: 8%;
 
   @media(max-width: 925px) {
     margin-top: 5%;
