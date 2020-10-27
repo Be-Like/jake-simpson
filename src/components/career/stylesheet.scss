@@ -4,6 +4,10 @@
   justify-content: space-evenly;
   margin: 50px 50px;
 
+  @media(max-width: 1000px) {
+    flex-wrap: wrap;
+  }
+
   &:first-child {
     margin-top: 0;
   }
@@ -16,6 +20,14 @@
 .details {
   color: white;
   width: 450px;
+
+  @media(max-width: 525px) {
+    width: 350px;
+  }
+
+  @media(max-width: 400px) {
+    width: 250px;
+  }
 }
 
 .title {

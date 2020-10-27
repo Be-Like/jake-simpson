@@ -27,9 +27,21 @@
 
 img {
   width: 450px;
+  
+  @media(max-width: 525px) {
+    width: 350px;
+  }
+  
+  @media(max-width: 400px) {
+    width: 250px;
+  }
 }
 
 .details {
   text-align: right;
+
+  @media(max-width: 1000px) {
+    text-align: left;
+  }
 }
 </style>
