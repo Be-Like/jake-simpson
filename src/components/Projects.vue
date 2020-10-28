@@ -1,7 +1,7 @@
 <template>
   <div id="Projects">
     <div class="cover"/>
-    <p class="header">Projects</p>
+    <p class="header">Personal Projects</p>
     <div class="projects-container">
       <Tisn />
       <StockWatcher />
