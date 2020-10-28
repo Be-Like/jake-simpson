@@ -2,12 +2,22 @@
   <div id="Learning">
     <div class="cover" />
     <p class="header">What I'm Currently Learning</p>
+    <div class="learning-container">
+      <Overview />
+      <Flutter />
+    </div>
   </div>
 </template>
 
 <script>
-export default {
+import Overview from './learning/overview'
+import Flutter from './learning/flutter'
 
+export default {
+  components: {
+    Overview,
+    Flutter
+  }
 }
 </script>
 
@@ -16,10 +26,11 @@ export default {
   background-image: url('../assets/learning.jpg');
   background-position: center bottom;
   background-size: cover;
+  padding-bottom: 50px;
   position: relative;
   min-height: 500px;
+  text-align: left;
   width: 100%;
-  background-color: white;
 }
 
 .cover {
@@ -37,10 +48,23 @@ export default {
   font-size: 25px;
   font-weight: bold;
   left: 0;
-  margin: 15px;
   padding: 0;
   position: absolute;
   right: 0;
+  text-align: center;
   top: 0;
+}
+
+.learning-container {
+  padding-top: 60px;
+  padding-right: 43%;
+  position: relative;
+
+  @media(max-width: 1000px) {
+    padding-right: 0;
+  }
+  @media(max-width: 325px) {
+    padding-top: 90px;
+  }
 }
 </style>

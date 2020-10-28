@@ -30,6 +30,7 @@ export default {
   background-position: center;
   background-size: cover;
   min-height: 500px;
+  padding-bottom: 50px;
   position: relative;
   width: 100%;
 }

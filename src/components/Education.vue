@@ -29,6 +29,7 @@ export default {
   background-position: left bottom;
   background-size: cover;
   min-height: 300px;
+  padding-bottom: 50px;
   position: relative;
   width: 100%;
 }
@@ -51,5 +52,9 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+
+  @media(max-width: 350px) {
+    padding-top: 90px;
+  }
 }
 </style>

@@ -51,10 +51,11 @@ export default {
 
 <style lang="scss" scoped>
 #Contact {
-  position: relative;
-  height: 20vh;
-  width: 100%;
   background-image: url('../assets/contact.png');
+  position: relative;
+  padding-bottom: 50px;
+  min-height: 100px;
+  width: 100%;
 }
 
 .header {
@@ -79,7 +80,7 @@ export default {
   margin: auto;
   position: absolute;
   right: 0;
-  top: 30%;
+  top: 30px;
   width: 30%;
 
   @media(max-width: 1100px) {
@@ -96,6 +97,10 @@ export default {
 
   @media(max-width: 400px) {
     width: 80%;
+  }
+  
+  @media(max-width: 350px) {
+    top: 60px;
   }
 }
 
