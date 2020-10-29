@@ -12,7 +12,7 @@
       ref='background'
       src='./assets/family-mobile.jpg'
     />
-    <!-- <img class='background' ref='background' src='./assets/family.jpg'/> -->
+    <div class="foreground" />
     <div class='section section-1' ref='first'>
       <div>
         <p>Hi, I'm <br/> Jake Simpson</p>
@@ -147,15 +147,11 @@ img.background, div.foreground {
 img.background {
     /* Positioning */
     position: fixed;
-    margin-top: -10%;
     top: 0;
     left: 0;
 
-    @media(max-width: 1100px) {
+    @media(min-width: 1300px) {
       margin-top: -5%;
-    }
-    @media(min-height: 790px) {
-      margin-top: 0;
     }
     @media(max-width: 575px) {
       margin-top: 0;
@@ -166,6 +162,10 @@ img.background {
     @media(max-width: 425px) {
       left: -80px;
     }
+}
+div.foreground {
+  background-color: rgba($color: #000000, $alpha: 0.3);
+  position: fixed;
 }
 .section {
     min-height: 100vh;
