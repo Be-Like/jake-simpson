@@ -1,7 +1,6 @@
 <template>
   <div class='root'>
     <img class='background' ref='background' src='./assets/family.jpg'/>
-    <!-- <img class='foreground' ref='foreground' src='./assets/tree-foreground.png'/> -->
     <div class='section section-1' ref='first'>
       <div>
         <p>Hi, I'm <br/> Jake Simpson</p>
@@ -94,11 +93,12 @@ body {
   padding: 0;
 }
 #app {
+  color: #2c3e50;
+  background-color: black;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
 }
 </style>
 
@@ -122,6 +122,9 @@ img.background {
     @media(max-width: 1100px) {
       margin-top: -5%;
     }
+    @media(min-height: 790px) {
+      margin-top: 0;
+    }
 }
 .section {
     min-height: 100vh;
@@ -138,6 +141,10 @@ img.background {
   margin-top: 4%;
   margin-right: 8%;
 
+  @media(max-width: 1000px) {
+    left: 0;
+    bottom: 0;
+  }
   @media(max-width: 925px) {
     margin-top: 5%;
     margin-right: 5%;
@@ -154,10 +161,13 @@ img.background {
   margin-bottom: 500px; /* determines the gap between our two sections */
   font-size: 4em;
   text-align: right;
+
+  @media(max-width: 1000px) {
+    text-align: center;
+  }
   @media(max-width: 925px) {
     font-size: 3em;
   }
-  /* background-color: rgba(255, 255, 255, 0.7); */
 }
 
 .section-2 {
