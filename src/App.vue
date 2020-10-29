@@ -1,6 +1,18 @@
 <template>
   <div class='root'>
-    <img class='background' ref='background' src='./assets/family.jpg'/>
+    <img
+      v-if="screenWidth >= 575"
+      class='background'
+      ref='background'
+      src='./assets/family.jpg'
+    />
+    <img
+      v-if="screenWidth < 575"
+      class='background'
+      ref='background'
+      src='./assets/family-mobile.jpg'
+    />
+    <!-- <img class='background' ref='background' src='./assets/family.jpg'/> -->
     <div class='section section-1' ref='first'>
       <div>
         <p>Hi, I'm <br/> Jake Simpson</p>
@@ -36,6 +48,12 @@ export default {
     Career,
     Education,
     Contact
+  },
+
+  data() {
+    return {
+      screenWidth: window.innerWidth
+    }
   },
 
   setup () {
@@ -76,6 +94,16 @@ export default {
       second
     }
   },
+
+  mounted() {
+    window.addEventListener('resize', this.onResize);
+  },
+
+  methods: {
+    onResize() {
+      this.screenWidth = window.innerWidth
+    }
+  }
 }
 </script>
 
@@ -103,10 +131,14 @@ body {
 </style>
 
 <style lang="scss" scoped>
-img.background, img.foreground {
+img.background, div.foreground {
     /* Fill background */
     min-height: 100%;
     min-width: 1024px;
+
+    @media(max-width: 575px) {
+      min-width: 505px;
+    }
 
     /* Scale proportionately */
     width: 100%;
@@ -124,6 +156,15 @@ img.background {
     }
     @media(min-height: 790px) {
       margin-top: 0;
+    }
+    @media(max-width: 575px) {
+      margin-top: 0;
+    }
+    @media(max-width: 505px) {
+      left: calc(100vw - 505px);
+    }
+    @media(max-width: 425px) {
+      left: -80px;
     }
 }
 .section {
@@ -144,10 +185,7 @@ img.background {
   @media(max-width: 1000px) {
     left: 0;
     bottom: 0;
-  }
-  @media(max-width: 925px) {
-    margin-top: 5%;
-    margin-right: 5%;
+    margin: 0 auto;
   }
 }
 
