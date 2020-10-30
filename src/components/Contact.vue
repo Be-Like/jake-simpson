@@ -99,7 +99,7 @@ export default {
     width: 80%;
   }
   
-  @media(max-width: 350px) {
+  @media(max-width: 400px) {
     top: 60px;
   }
 }

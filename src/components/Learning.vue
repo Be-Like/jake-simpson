@@ -63,7 +63,7 @@ export default {
   @media(max-width: 1000px) {
     padding-right: 0;
   }
-  @media(max-width: 325px) {
+  @media(max-width: 400px) {
     padding-top: 90px;
   }
 }

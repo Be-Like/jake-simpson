@@ -53,7 +53,7 @@ export default {
   flex-wrap: wrap;
   justify-content: space-evenly;
 
-  @media(max-width: 350px) {
+  @media(max-width: 400px) {
     padding-top: 90px;
   }
 }
